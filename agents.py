@@ -11,7 +11,7 @@ from langchain_groq import ChatGroq
 class StockAnalysisAgents:
   def __init__(self):
         self.ChatGroq = ChatGroq(
-            model_name="llama3-70b-8192", temperature=0.7)
+            model_name="llama3-70b-8192", temperature=0.7, max_retries= 2)
 
   def financial_analyst(self):
     return Agent(
