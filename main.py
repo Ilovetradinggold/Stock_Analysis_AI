@@ -36,7 +36,8 @@ class FinancialCrew:
         filings_task,
         recommend_task
       ],
-      verbose=True
+      verbose=True,
+      max_rpm = 3
     )
 
     result = crew.kickoff()
